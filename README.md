@@ -8,7 +8,7 @@ Este proyecto tiene como principal objetivo el desarrollo de un sitio web respon
 
 ## Consideraciones 
 
-* Este proyecto estará desarrollado a partir de una serie de commits mediante el uso del software **Git Bash** (mismo que se utizo a lo largo de ambos módulos), en cada uno de los commits se integrará codigo HTML Y CSS con base en el temario del módulo 2 y respecto a las necesidades estructurales de la página web.
+* Este proyecto estará desarrollado a partir de una serie de commits mediante el uso del software **Git Bash** (mismo que se utilizó a lo largo de ambos módulos), en cada uno de los commits se integrará codigo HTML Y CSS con base en el temario del módulo 2 y respecto a las necesidades estructurales de la página web.
 
 * Este es mi primer proyecto de desarrollo web, en el cual integro HTML Y CSS. Si tienes recomendaciones hacia mi trabajo, por favor no dude en expresarlas.
 

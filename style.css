@@ -1,8 +1,186 @@
 body{
     margin: 0;
+    padding: 0;
 }
+/* Estilos de menú de navegación */
 
 header{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    display: flex;
+    width: 100vw;
+    height: 79px;
+    box-sizing: border-box;
     background-color: #2f445f;
     color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #ff6764;
+    overflow: hidden;
+    font-family:'Inter','Inter', Arial, sans-serif;
+}
+
+header div {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+header div h5 a{
+    font-size: 20px;
+    margin: 0 0 0 4px;
+    font-size: 20px;
+}
+
+header .logo{
+    width: 55px ;
+    height: 52px;
+    margin: 0 5px 0 0;
+}
+
+header nav { 
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header li { 
+    display: inline;
+    list-style-type: none;
+}
+
+.navSections li {
+    box-sizing: border-box;
+    padding: 7.5px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+}
+
+.navSections a {
+    padding: 0 0 3px 0;
+    border: 0 0 3px 0;
+
+}
+
+.navSections a:hover {
+    border-bottom: solid #ff6764;
+}
+
+.navSections a:target {
+    border-bottom: solid #ff6764;
+}
+
+.navIcons {
+    margin: 0;
+    padding: 0;
+}
+
+.navIcons li svg { 
+    width: 15px;
+    height: 15px;
+    padding: 0 7px;
+}
+
+.navIcons li svg:hover { 
+    fill: #ff6764;
+}
+
+.space1{
+    height: 79px;
+}
+
+/* Estilos de Sección 1 (Home) */
+
+.homeSection {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #2f445f ;
+    height: 91.5vh;
+    width: 99.14vw;
+    padding: none;
+    margin: none;
+    color: white;
+    font-family:'Inter','Inter', Arial, sans-serif;
+    overflow: hidden;
+}
+
+.homeDescription {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+    overflow: hidden;
+    flex-direction: column;
+    height: 744px;
+}
+
+.homeDescription h1{
+    font-size: 40.48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.homeDescription p { 
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.homeDescription .homeButton {
+    box-sizing: border-box;
+    padding: 14.85px 30.525px;
+    background-color: #ff6764;
+}
+
+.homeDescription .homeButton a {
+    color: white;
+    text-decoration: none;
+}
+
+.homeDescription .homeButton svg {
+    width: 16.5px;
+    height: 16.5px;
+    padding: none;
+    margin: none;
+}
+
+.homeDescription .homeButton span {
+   font-size: 16.5px;
+   font-weight: 400;
+}
+
+.homeImg {
+    flex: 2;
+    background-image: url(Images/casaS1.webp);
+    overflow: hidden;
+    background-size: cover;   /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center;  /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; 
+    width: auto;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+img{
+    width: 100px;
 }

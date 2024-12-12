@@ -7,30 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Hyper texto de Menú de navegación -->
     <header>
+        <div>
+            <img src="Images/Logo.webp" alt="Logo de la empresa" class="logo">
+            <h5><a href="#">EASY NEST PROPERTIES</a></h5>
+        </div>
         <nav>
-            <img src="Images/icons8-real-estate-agent-100.png" alt="Loo de la empresa">
-            <a href="">EASY NEST PROPERTIES</a>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Que hacemos</a></li>
-                    <li><a href="">>Servicios</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
+            <ul class="navSections">
+                <li><a href="#oneSection">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">What We Do</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="navIcons">
+                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 512 512"><path d="M512 202v227c0 25-20 46-46 46H46c-25 0-46-21-46-46V202c9 9 18 18 29 25 47 32 95 65 142 99 24 18 54 39 85 39h1c31 0 61-22 85-39 47-34 95-67 142-99 10-7 20-16 29-25zM512 119c0 32-24 61-49 78-45 31-89 62-134 93-19 13-50 39-73 39h-1c-23 0-55-26-73-39-44-31-89-62-134-93-20-14-49-46-49-72 0-28 15-52 46-52h421c25 0 46 21 46 46z"/></svg></a>
+                </li>
+                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 402 512"><path d="M402 354c0 10-5 30-9 40-6 14-22 23-35 30-17 9-34 15-53 15-27 0-51-11-75-20-17-6-34-14-50-24-49-30-107-89-137-137-10-16-17-33-24-50-9-24-20-48-20-75 0-19 5-36 15-53 7-13 16-29 30-35 9-4 29-9 40-9 2 0 4 0 6 1 6 2 12 16 15 22 9 16 18 33 27 49 5 7 13 17 13 25 0 17-52 43-52 59 0 8 7 18 11 25 29 52 65 88 117 117 7 4 17 11 25 11 15 0 41-52 59-52 9 0 18 9 25 13 16 9 33 18 49 27 6 3 20 9 22 15 1 2 1 4 1 6z"/></svg></a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Welcome to EASY NEST PROPERTIES</h1>
+        <div class="space1"></div>
+<!-- Hyper texto de: Primera sección (Home) -->
+        <section class="homeSection" id="oneSection">
+            <div class="homeDescription">
+                <h1>Welcome to EASY  NEST PROPERTIES</h1>
                 <p>Your trusted property management company</p>
-                <a href="">LET US HELP YOU!</a>
+                <div class="homeButton">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                        <g class="nc-icon-wrapper" stroke="none" fill="#FFFFFF">
+                        <path d="M32,7.842,9,26.242V58a3,3,0,0,0,3,3H25V45a1,1,0,0,1,1-1H38a1,1,0,0,1,1,1V61H52a3,3,0,0,0,3-3V26.242ZM37,34a1,1,0,0,1-1,1H28a1,1,0,0,1-1-1V26a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1Z" fill="#FFFFFF"></path>
+                        <path data-color="color-2" d="M62.625,27.219l-30-24a1,1,0,0,0-1.25,0L17,14.719V8a1,1,0,0,0-1-1H12a1,1,0,0,0-1,1V19.519l-9.625,7.7a1,1,0,0,0,1.25,1.562L32,5.281l29.375,23.5a1,1,0,1,0,1.25-1.562Z" fill="#FFFFFF"></path>
+                         </g>
+                    </svg>
+                    <span>LET US HELP YOU!</span>
+                     </a>
+                </div>
             </div>
-            <div>
-                <img src="Images/Imagen de inicio.webp" alt="Fachada de casa">
+            <div class="homeImg">
             </div>
         </section>
+<!-- Hyper texto de: Segunda sección (About Us) -->      
         <section>
             <div>
                 <h2>About Us</h2>
@@ -41,9 +62,10 @@
                 exceptional experiences for property owners and tenants alike.</p>
             </div>
             <div>
-                <img src="Images/Alquilar-.png" alt="Perona con llave">
+                <img src="Images/aboutUs.webp" alt="Perona con llave">
             </div>
         </section>
+<!-- Hyper texto de: Tercera sección (What We Do) -->          
         <section>
             <div></div>
             <div>
@@ -56,15 +78,28 @@
                 property management industry.</p>
             </div>
             <div>
-                <img src="Images/Casa moderna 2.webp" alt="Fachada de casa">
+                <img src="Images/whatWeDo.webp" alt="Fachada de casa">
             </div>
         </section>
+<!-- Hyper texto de: Cuarta sección (Services) -->          
         <section>
             <h2>Services</h2>
             <div>
-                <img src="" alt="">
+                <div>
+                    <div><img src="Images/Servicios 1.webp" alt="Persona con calculadora"></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div><img src="Images/Servicios 2.webp" alt="Parela con llaves"></div>
+                </div>
+                <div>
+                    <div><img src="Images/Servicios 3.webp" alt="Palmas con llavero"></div>
+                    <div></div>         
+                </div>
             </div>
         </section>
+<!-- Hyper texto de: Quinta sección (Botón que lleva a sección de contacto) -->      
         <section>
             <div>
                 <h2>Discover the 
@@ -79,9 +114,10 @@
                 <span><a href="#"></a>ENQUIRE NOW</span>
             </div>
             <div>
-                <img src="Images/Preguntar Ahora.webp" alt="">
+                <img src="Images/discover.webp" alt="Entrega de llaves">
             </div>
         </section>
+<!-- Hyper texto de: Sexta sección (Reviews) -->   
         <article>
             <h1>ReVIEWS</h1>
             <div>
@@ -126,13 +162,16 @@
                 </div>
             </div>
         </article>
-        <section>
-            <img src="" alt="">
-        </section>
+<!-- Hyper texto de imagen vacía que abarca todo el width -->   
+        <div>
+            <img src="Images/Family.webp" alt="Familia de tres">
+        </div>
+<!-- Hyper texto de: Séptima sección (Contact) -->   
         <section>
             <h2>Contacto</h2>
         </section>
     </main>
+<!-- Hyper texto de Footer-->   
     <footer>
         <ul>
             <li>Inicio</li>
@@ -142,6 +181,7 @@
             <li>Reseñas</li>
             <li>Contacto</li>
         </ul>
+        <p>Copyright © 2024 All rights reserved - EASY NEST PROPERTIES</p>
     </footer>
 </body>
 </html>
