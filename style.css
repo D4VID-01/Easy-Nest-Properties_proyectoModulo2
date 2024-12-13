@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
+    font-family:'Inter','Inter', Arial, sans-serif;
 }
+
 /* Estilos de menú de navegación */
 
 header{
@@ -9,7 +11,7 @@ header{
     top:0;
     z-index: 1000;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 79px;
     box-sizing: border-box;
     background-color: #2f445f;
@@ -19,7 +21,6 @@ header{
     padding: 0 15px;
     border-bottom: 1px solid #ff6764;
     overflow: hidden;
-    font-family:'Inter','Inter', Arial, sans-serif;
 }
 
 header div {
@@ -97,8 +98,8 @@ header li {
     fill: #ff6764;
 }
 
-.space1{
-    height: 79px;
+main{
+    padding-top: 79px;
 }
 
 /* Estilos de Sección 1 (Home) */
@@ -108,45 +109,70 @@ header li {
     display: flex;
     background-color: #2f445f ;
     height: 91.5vh;
-    width: 99.14vw;
+    width: 100%;
     padding: none;
     margin: none;
     color: white;
-    font-family:'Inter','Inter', Arial, sans-serif;
     overflow: hidden;
 }
 
-.homeDescription {
+.homeContent { 
+    height: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeContent .homeDescription {
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1; 
-    overflow: hidden;
     flex-direction: column;
-    height: 744px;
+    background-color: #2f445f;
+    width: 70%;
 }
 
-.homeDescription h1{
+.homeContent .homeDescription h1{
     font-size: 40.48px;
     font-weight: 700;
-    text-align: center;
+    margin: 0;
 }
 
-.homeDescription p { 
+.homeContent .homeLine { 
+    border-top-color: rgb(255, 103, 100);
+    border-top-style: solid;
+    border-top-width: 6px;
+    box-sizing: border-box;
+    content: "";
+    font-size: 16.5px;
+    margin: 30px 0;
+    height: 6px;
+    line-height: 24.75px;
+    width: 100px;
+    }
+
+ .homeContent .homeDescription p { 
     font-size: 26px;
     font-weight: 500;
+    margin-top: 0;
 }
 
-.homeDescription .homeButton {
+.homeContent .homeDescription .homeButton {
+    display: flex;
+    width: 50%;
     box-sizing: border-box;
-    padding: 14.85px 30.525px;
     background-color: #ff6764;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
 }
 
 .homeDescription .homeButton a {
     color: white;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .homeDescription .homeButton svg {
@@ -159,6 +185,7 @@ header li {
 .homeDescription .homeButton span {
    font-size: 16.5px;
    font-weight: 400;
+   margin: 0;
 }
 
 .homeImg {
@@ -171,6 +198,144 @@ header li {
     width: auto;
     height: auto;
 }
+
+/* Estilos de Sección 2 (About Us) */
+
+.aboutSection {
+    box-sizing: border-box;
+    background-color: white;
+    height: 640px;
+    padding: 100px 0;
+    display: flex ;
+    justify-content: center;
+}
+
+.aboutContent { 
+    width: 1290px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 0 7%;
+}
+.aboutSection .aboutDescription { 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 440px;
+   justify-content: center;
+}
+
+.aboutSection .aboutDescription h2 { 
+    font-size: 52px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutSection .aboutDescription p { 
+    font-size: 1.25rem;
+    overflow-wrap: break-word;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+.aboutLine { 
+border-top-color: rgb(255, 103, 100);
+border-top-style: solid;
+border-top-width: 6px;
+box-sizing: border-box;
+content: "";
+font-size: 16.5px;
+margin: 30px 0;
+height: 6px;
+line-height: 24.75px;
+width: 100px;
+}
+
+.aboutSection .aboutImg { 
+    box-sizing: border-box;
+    height: 440px;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aboutSection .aboutImg img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+/* Estilos de Sección 3 (What We Do) */
+
+.whatSection { 
+    box-sizing: border-box;
+    width: 100%;
+    height: 76vh;
+    display: flex;
+}
+
+.whatImg {
+    flex: 1;
+    background-image: url(Images/whatWeDo.webp);
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.whatContent { 
+    box-sizing: border-box;
+    flex: 1;
+    background-color:#2f445f;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.whatContent .whatDescription {
+    box-sizing: border-box; 
+    padding: 15%;
+    margin: 0;
+}
+
+.whatContent .whatDescription h2{
+    font-size: 52px;
+    margin: 0;
+    padding: 0;
+}
+
+.whatLine { 
+    border-top-color: rgb(255, 103, 100);
+    border-top-style: solid;
+    border-top-width: 6px;
+    box-sizing: border-box;
+    content: "";
+    font-size: 16.5px;
+    margin: 30px 0;
+    height: 6px;
+    line-height: 24.75px;
+    width: 100px;
+    }
+
+.whatContent .whatDescription p{
+    font-size: 1.25rem;
+    overflow-wrap: break-word;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+
+
 
 
 
