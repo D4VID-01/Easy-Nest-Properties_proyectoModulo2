@@ -1,3 +1,7 @@
+
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -134,7 +138,7 @@ main{
 }
 
 .homeContent .homeDescription h1{
-    font-size: 2.55rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin: 0;
 }
@@ -160,19 +164,19 @@ main{
 
 .homeContent .homeDescription .homeButton {
     display: flex;
-    width: 50%;
     box-sizing: border-box;
-    background-color: #ff6764;
     justify-content: center;
     align-items: center;
     padding: 4% 0;
+    display: inline-block;
 }
 
 .homeDescription .homeButton a {
     color: white;
     text-decoration: none;
     margin: 0;
-    padding: 0;
+    padding: 4.5% 7%;
+    background-color: #ff6764;
 }
 
 .homeDescription .homeButton svg {
@@ -218,12 +222,13 @@ main{
     gap: 40px;
     margin: 0 7%;
 }
+
 .aboutSection .aboutDescription { 
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     height: 440px;
-   justify-content: center;
+    justify-content: center;
 }
 
 .aboutSection .aboutDescription h2 { 
@@ -295,7 +300,6 @@ width: 100px;
     flex: 1;
     background-color:#2f445f;
     color: white;
-
     display: flex;
     align-items: center;
 }
@@ -467,7 +471,6 @@ width: 100px;
     padding: 32px ;
     
 }
-
 .servicesContent .fr6 {
     overflow: hidden;
     box-sizing: border-box;
@@ -486,20 +489,202 @@ width: 100px;
     padding: 0;
 }
 
+/* Estilos de Sección Comodín 1 (Enquire Now) */
 
-/* Estilos de Sección 4 (Services) */
+.enquire { 
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    display: flex; 
+    padding: none; 
+    overflow: hidden;
+    margin: none;
+}
 
+.enquire .enquireContent {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    background-color:  #2f445f;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
 
+.enquire .enquireContent .enquireDescription {
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-wrap: wrap;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    justify-content: center;
+}
 
+.enquireContent .enquireDescription h2 {
+    font-size: 2.688rem;  
+    letter-spacing: 0.5px; 
+    font-weight: 700;
+    margin: 0;
+}
 
+.enquireLine { 
+    border-top-color: rgb(255, 103, 100);
+    border-top-style: solid;
+    border-top-width: 6px;
+    box-sizing: border-box;
+    content: "";
+    font-size: 16.5px;
+    height: 6px;
+    line-height: 24.75px;
+    width: 100px;
+    margin: 30px 0;
+}
 
+.enquireContent .enquireDescription p {
+    font-size: 1.5rem;  
+    letter-spacing: 0.5px;
+    margin: 0 0 3rem 0; 
+}
 
+.enquireContent .enquireDescription a {
+    text-decoration: none;
+    color: white;
 
+}
 
+.enquireContent .enquireDescription span {
+    background-color: #ff6764;
+    text-decoration: none;
+    color: white;
+    padding: 4% 7%;
+}
 
+.enquire .enquireImg {
+    flex: 2;
+    background-image: url(Images/discover.webp);
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
 
+/* Estilos de Sección 5 (Reviews) */
 
+.reviewsSection {
+    box-sizing: border-box;
+    background-color: white;
+    height: 680px;
+    padding: 100px 0;
+}
 
-img{
+.reviewsSection .reviewsEncabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewsSection .reviewsEncabezado h2 {
+    letter-spacing: 0.5px;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.reviewsEncabezado .reviewsLine { 
+    border-top-color: rgb(255, 103, 100);
+    border-top-style: solid;
+    border-top-width: 6px;
+    box-sizing: border-box;
+    content: "";
+    font-size: 16.5px;
+    margin: 1rem 0;
+    height: 6px;
+    line-height: 24.75px;
     width: 100px;
 }
+
+.containerCenter { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewsContent { 
+    box-sizing: border-box;
+    width: 1290px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 0 7%;
+}
+
+.reviewsSection .fr1 { 
+    box-sizing: border-box;
+    padding: 32px;
+    background-color: rgb(235, 237, 240);
+    border-radius: 20px;
+    color: rgb(68, 73, 80);
+}
+
+.reviewsSection .fr2 { 
+    box-sizing: border-box;
+    background-color: rgb(235, 237, 240);
+    padding: 32px;
+    border-radius: 20px;
+    color: rgb(68, 73, 80);
+}
+
+.reviewsSection .fr3 { 
+    box-sizing: border-box;
+    background-color: rgb(235, 237, 240);
+    padding: 32px;
+    border-radius: 20px;
+    
+}
+
+.reviewsSection .reviewsContent h4 { 
+    color: black;
+    font-size: 1.25rem;
+    margin: 15px 0;
+}
+
+.reviewsSection .reviewsContent span { 
+    color: rgb(255, 191, 0);
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.reviewsSection .reviewsContent p { 
+    color: rgb(68, 80, 77);
+    opacity: 0.7;
+    font-size: 1.099rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+
+/* Estilos de Sección Comodín 2 (Imagen de familia fondo) */
+
+.imageSection {
+    width: 100%;
+    height: 98vh;
+    background-image: url(Images/Family.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+
+
