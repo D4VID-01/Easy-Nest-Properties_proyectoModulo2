@@ -2,10 +2,41 @@
 html {
     scroll-behavior: smooth;
 }
+
 body{
     margin: 0;
     padding: 0;
     font-family:'Inter','Inter', Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+/* Icono flotante de Whatsapp */
+
+main .marginIcon { 
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 2vh !important;
+    right: 2vw !important;
+    z-index: 200000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 211, 102);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+main .marginIcon .iconWhatsapp {
+    background-image: url(Images/whatsapp.webp);
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    background-size: cover;   
+    background-position: center;  
+    background-repeat: no-repeat; 
+    
 }
 
 /* Estilos de menú de navegación */
@@ -76,14 +107,9 @@ header li {
 .navSections a {
     padding: 0 0 3px 0;
     border: 0 0 3px 0;
-
 }
 
-.navSections a:hover {
-    border-bottom: solid #ff6764;
-}
-
-.navSections a:target {
+.navSections a:focus {
     border-bottom: solid #ff6764;
 }
 
@@ -685,6 +711,182 @@ width: 100px;
     background-repeat: no-repeat;
 }
 
+/* Estilos de Sección 6 (Contact) */
+.contactSection { 
+    box-sizing: border-box;
+    width: 100%;
+    height: 450px;
+    margin: 100px 0;
+}
 
+.contactSection .contactEncabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactSection .contactEncabezado h2 {
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    
+}
+
+.contactSection .contactLine {
+    border-top-color: rgb(255, 103, 100);
+    border-top-style: solid;
+    border-top-width: 6px;
+    box-sizing: border-box;
+    content: "";
+    font-size: 16.5px;
+    margin: 1rem 0;
+    height: 6px;
+    line-height: 24.75px;
+    width: 100px;
+    margin: 1.5rem;
+    padding: 0;
+}
+
+.contactSection .parentContent { 
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 80vw;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.contactSection .contactContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas en pantallas grandes */
+    grid-template-rows: 15% 1fr;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.contactContent .fr1 {
+    box-sizing: border-box;
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactContent .fr1 input {
+    width: 22%;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+}
+
+.contactContent .fr1 input:focus {
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(255, 103, 100, 0.7);
+    transition: border-color 0.7s ease;
+}
+
+input::placeholder {
+    color: #888; 
+    opacity: 1;
+    padding-left: 15px; 
+}
+
+
+.contactContent .fr1 a {
+    width: 22%;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    background-color:rgb(255, 103, 100);
+    text-align: center;
+    padding: 16px 0;
+}
+
+.contactContent .fr1 a:focus {
+    border: 0.5px solid rgb(0, 0, 0);
+    transition: border-color 0.5s ease;
+    border-radius: 5px;
+}
+
+.contactContent .fr2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+
+.contactContent .fr2 img {
+    width: 16px;
+    height: 16px;
+}
+
+.contactContent .fr2 a {
+    text-decoration: none;
+    color:rgb(255, 103, 100);
+}
+
+.contactContent .fr2 a:hover {
+    text-decoration:underline;
+}
+
+.contactContent .fr3 {
+    background-image: url(Images/Mapa1.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+
+/* Estilos de Footer */
+
+footer {
+    padding: 0;
+    margin: 0;
+    height: 150px;
+}
+
+footer div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #2f445f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    padding: 30px 0;
+}
+
+footer div ul{
+    margin-bottom: 15px;
+}
+
+footer div ul li {
+    padding: 0 10px;
+    display: inline;
+}
+
+footer div li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer div li a:hover {
+    color: rgb(226, 223, 223);
+}
+
+footer div p {
+    margin-bottom: 15px;
+}
 
 
