@@ -109,7 +109,7 @@ header li {
     border: 0 0 3px 0;
 }
 
-.navSections a:focus {
+.navSections a:hover {
     border-bottom: solid #ff6764;
 }
 
@@ -580,7 +580,6 @@ width: 100px;
 .enquireContent .enquireDescription a {
     text-decoration: none;
     color: white;
-
 }
 
 .enquireContent .enquireDescription span {
@@ -602,6 +601,7 @@ width: 100px;
 /* Estilos de Sección 5 (Reviews) */
 
 .reviewsSection {
+    overflow: hidden;
     box-sizing: border-box;
     background-color: white;
     height: 680px;
@@ -636,9 +636,12 @@ width: 100px;
 }
 
 .containerCenter { 
+    overflow: hidden;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .reviewsContent { 
@@ -888,5 +891,376 @@ footer div li a:hover {
 footer div p {
     margin-bottom: 15px;
 }
+
+
+/* ---------------------------------------------  MEDIAS QUERYS  --------------------------------------------------- */
+
+
+/* BREAKPOINT en 1290px */
+@media screen and (max-width: 1290px) {
+/* Modificación a Sección "HOME"*/
+
+    .enquireContent .enquireDescription h2, .homeContent .homeDescription h1 {
+        font-size: 2em; 
+        margin: 10px 0; 
+        white-space: normal; 
+        text-overflow: unset; 
+    }
+}
+
+
+
+/* BREAKPOINT en 1250px */
+@media screen and (max-width: 1250px) {
+
+/* Modificación a Sección "SERVICES"*/
+
+    .servicesSection .servicesContent {
+        width: 100%; /
+        padding: 0 10px; 
+        gap: 0 1rem; 
+    }
+
+    .servicesContent .fr1, .servicesContent .fr3, .servicesContent .fr5 {
+        padding: 20px; 
+    }
+
+    .servicesContent .fr2,.servicesContent .fr4, .servicesContent .fr6 {
+        padding: 20px; 
+    }
+
+    .servicesContent div h4 {
+        font-size: 1.1em; 
+    }
+
+    .servicesContent div p {
+        font-size: 15px; 
+    }
+}
+
+
+
+/* BREAKPOINT en 1024px */
+@media (max-width: 1024px) {
+    
+/* Modificación a Menú de navegación*/
+
+    .navSections li:nth-child(n+5) { 
+        display: none; /* Oculta "Reviews" y "Contact" en pantallas pequeñas */
+    }
+}
+
+
+
+/* BREAKPOINT en 1024px */
+
+@media (max-width: 1024px) {
+    
+/* Modificación a Sección "REVIEWS"*/
+    
+    .reviewsSection .reviewsContent h4,.reviewsSection .reviewsContent p {
+        font-size: 0.9rem; 
+    }
+    
+    .reviewsSection .reviewsContent .fr1, .reviewsSection .reviewsContent .fr2, .reviewsSection .reviewsContent .fr3  {
+        padding: 20px;
+        margin: 0; 
+    }
+
+    .reviewsSection .reviewsContent {
+        gap: 10px; 
+        margin: 0 5%; 
+    }
+}
+
+
+
+/* BREAKPOINT en 990px */
+
+@media screen and (max-width: 990px) {
+/* Modificación a Menú de navegación */
+
+    .navSections li:nth-child(n+4) { 
+        display: none; 
+    }
+
+/* Modificación a sección de "HOME" */
+
+    .homeSection {
+        height: 60vh;
+    }
+    
+    .homeImg {
+        flex: 1;
+    }
+
+    .enquire .enquireImg {
+        flex: 1;
+    }
+
+/* Modificación a sección de "ABOUT US" */
+
+    .aboutContent { 
+    margin: 0 13%;
+    }
+
+    .aboutSection .aboutDescription p { 
+        font-size: 1.1rem;
+    }
+
+/* Modificación a sección de "WHAT WE DO" */
+
+    .whatContent .whatDescription h2{
+    font-size: 2.6rem;
+    }
+
+    .whatContent .whatDescription p{
+        font-size: 1.1rem;
+        line-height: 20px;
+    }
+
+/* Modificación a contenedor con imagen completa */   
+
+    .imageSection {
+        height: 60vh;
+    }
+
+/* Modificación a sección de "Contact" */   
+
+    .contactSection { 
+        height: 100%;
+       
+    }
+
+    .contactSection .contactContent {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .contactContent .fr1 {
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        gap: 10px;
+    }
+
+    .contactContent .fr1 input {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contactContent .fr1 a {
+        width: 100%;
+    }
+}
+
+
+ 
+/* BREAKPOINTS */
+/* 768px */   
+/* Todas menos contact - Column */ 
+@media (max-width: 768px) { 
+
+/* Modificación a sección de "HOME" */  
+    .homeSection {
+        height: 100VH;
+        flex-direction: column;
+    }
+
+    .homeContent { 
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .homeContent .homeDescription {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .homeContent .homeDescription h1 {
+        font-size: 2.3rem;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+    }
+
+
+    .homeContent .homeLine { 
+        align-self: center;
+        margin: 20px 0;
+    }
+
+    .homeContent .homeDescription p {
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .homeDescription .homeButton a {
+        padding: 2.5% 5%;
+    }
+    
+/* Modificación a sección de "ABOUT US" */ 
+
+    .aboutSection {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 50px 0;
+    }
+
+    .aboutContent { 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
+    }
+
+    .aboutSection .aboutDescription { 
+        flex: 1;
+        height: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .aboutSection .aboutImg { 
+        flex: 1;
+        height: 100%;
+        order: 1;
+    }
+
+    .aboutLine { 
+        align-self: center;
+    }
+
+/* Modificación a sección de "WHAT WE DO" */ 
+
+    .whatSection { 
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .whatContent { 
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .whatContent .whatDescription {
+        order: 1;
+        padding: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatLine { 
+        margin: 20px 0;
+    }
+
+    .whatContent .whatDescription p{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .whatImg {
+        order: 2; 
+    }
+
+/* Modificación a sección de "SERVICES" */ 
+
+
+/* Modificación a Botón Enquire Now */
+
+    .enquire { 
+        height: 85vh;
+        flex-direction: column;
+    }
+
+    .enquire .enquireContent {
+        flex-direction: column;
+    }
+
+    .enquire .enquireContent .enquireDescription {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .enquireContent .enquireDescription h2 {
+        margin: 0;
+    }
+
+    .enquireLine { 
+        align-self: center;
+    }
+
+    .enquireContent .enquireDescription p {
+        margin:0 0 2rem 0 ;
+    }
+
+    .enquireContent .enquireDescription span {
+        padding: 2% 3%;
+        font-size: .9rem;
+    }
+
+/* Modificación a sección de "REVIEWS" */ 
+
+    .reviewsSection {
+        padding: 50px 0;
+        height: 100%;
+    }
+
+    .containerCenter { 
+        height: auto;
+    }
+
+    .reviewsContent { 
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1fr 1fr;
+        margin: 0 15px;
+    }
+
+    .reviewsSection .reviewsContent h4 { 
+        font-size: 17.5px;
+        margin: 15px 0;
+    }
+
+    .reviewsSection .reviewsContent span { 
+        font-size: 1,1rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+
+    .reviewsSection .reviewsContent p { 
+        font-size: 14px;
+        line-height: 1.25rem;
+    }
+
+/* Modificación a contenedor con imagen completa */   
+
+    .imageSection {
+        height: 40vh;
+    }
+
+} 
+
+
+
+
+
+/* BREAKPOINTS */
+/* 320px */   
+/* Menu */  
+@media (max-width: 768px) and (min-width: 380px) { 
+      
+}
+
+@media (max-width: 320px) { 
+      
+}
+
+
 
 

@@ -12,6 +12,10 @@ Este proyecto tiene como principal objetivo el desarrollo de un sitio web respon
 
 * Este es mi primer proyecto de desarrollo web, en el cual integro HTML Y CSS. Si tienes recomendaciones hacia mi trabajo, por favor no dude en expresarlas.
 
+* El nombre de la página en la cual me base [ATE & GLO'S PROPERTIES] (https://www.ategloproperty.co.uk/) fue remplazado por **EASY NEST PROPERTIES**, por cuestiones de distinción.
+
+* No pude lograr añadir la API de Google Maps ya que nunca he trabajado con una por lo cual fue sustituida con una imagen. 
+
 ## Referencias
 
 Las siguiente lista de referencias fueron cruciales para la consulta de información y la practica de la misma, con las cuales se llevó a cabo el desarrollo de este proyecto. 
